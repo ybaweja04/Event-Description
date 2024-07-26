@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Description Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="event-header">
+            <div class="event-row">
+                <div class="event-banner">
+                    <img src="event-image.avif" alt="Event Banner" class="event-banner-img">
+                </div>
+                <div class="event-registration">
+                    <h2>Registration</h2>
+                    <p>Approval Required</p>
+                    <p>Your registration is subject to approval by the host.</p>
+                    <form class="registration-form" id="registrationForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit" class="registration-button">Request to Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="event-info">
+                <h1 class="event-title">Things Designers Do</h1>
+                <div class="event-details">
+                    <p class="event-date">Saturday, 27 July</p>
+                    <p class="event-time">12:00 pm - 3:00 pm</p>
+                    <p class="event-location">Ninetales, Mumbai, Maharashtra</p>
+                </div>
+                <div class="countdown-timer">
+                    <h2>Countdown to Event</h2>
+                    <div id="countdown"></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="about-event">
+                <h2>About Event</h2>
+                <p>Calling all design enthusiasts in Mumbai! You spoke and Everything UX is listening!</p>
+                <p>"Things Designers Do" is a brand-new meetup created just for YOU. It's a space to ditch the design drama, reconnect with your creative spark and connect with fellow design minds.</p>
+                <p>Whether you are a recent grad or early in your career, this is your chance to dive deeper into the design world.</p>
+                <p id="note">Note: You'll be required to pay a nominal cover charge (food + beverage) of ₹99 at the entrance upon confirmation.</p>
+            </section>
+            <section class="event-speaker">
+                <h2>Speaker Information</h2>
+                <img src="speaker.jpg" alt="Speaker Photo" class="speaker-photo">
+                <p>John Doe: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Event Organizer</p>
+        </footer>
+
+        <!-- Modal -->
+        <div id="thankYouModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Thank You for Registering!</h2>
+                <p>Your registration has been received. We look forward to seeing you at the event.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

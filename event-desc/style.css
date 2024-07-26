@@ -1,0 +1,190 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(back2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.209);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-header {
+    background: rgba(255, 255, 255, 0.209);
+    padding: 20px;
+}
+
+.event-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.event-banner {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.event-banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-registration {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.event-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.event-title {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.event-details {
+    margin: 20px 0;
+}
+
+.event-date, .event-time, .event-location {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-form label {
+    margin: 10px 0 5px;
+}
+
+.registration-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-button {
+    margin-top: 15px;
+    background-color: #C82E4B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-button:hover {
+    background-color: #24929D;
+}
+
+.countdown-timer {
+    margin-top: 20px;
+}
+
+#countdown {
+    font-size: 1.5em;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+.about-event h2,.event-speaker h2{
+    color:#24929D;
+}
+.about-event,.event-speaker {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    color: #000000;
+}
+
+.speaker-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background: #ffffff1b;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+#note{
+    color: #C82E4B;
+}
+/* Add your existing CSS styles here */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
